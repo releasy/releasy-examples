@@ -1,0 +1,37 @@
+{
+  "name": "releasy-examples-swapi-web",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-plugin-relay": "^1.7.0-rc.1",
+    "relay-compiler": "^1.7.0-rc.1"
+  },
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-relay": "^1.7.0-rc.1",
+    "react-releasy": "^0.1.0",
+    "react-router-config": "^4.4.0-beta.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "relay-runtime": "^1.7.0-rc.1"
+  },
+  "scripts": {
+    "fetch-schema": "babel-node ./scripts/fetchSchema.js",
+    "compile-graphql": "relay-compiler --schema data/schema.graphql --src src",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
