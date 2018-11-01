@@ -9,11 +9,12 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babel-plugin-relay": "^1.7.0-rc.1",
+    "babel-plugin-relay": "^1.7.0",
     "express": "^4.16.4",
     "ignore-styles": "^5.0.1",
     "md5-file": "^4.0.0",
-    "relay-compiler": "^1.7.0-rc.1"
+    "relay-compiler": "^1.7.0",
+    "relay-devtools": "^1.4.0"
   },
   "dependencies": {
     "babel-plugin-macros": "^2.4.2",
@@ -22,14 +23,14 @@
     "react-dom": "^16.5.2",
     "react-helmet": "^5.2.0",
     "react-loadable": "^5.5.0",
-    "react-relay": "https://github.com/releasy/relay/releases/download/1.7.0-rc.1-releasy/react-relay-1.7.0-rc.1-releasy.tgz",
-    "react-releasy": "../../react-releasy",
+    "react-relay": "https://github.com/releasy/relay/releases/download/v1.7.0-releasy/react-relay-1.7.0-releasy.tgz",
+    "react-releasy": "^0.1.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4",
-    "relay-runtime": "^1.7.0-rc.1"
+    "relay-runtime": "^1.7.0"
   },
   "resolutions": {
-    "react-relay": "https://github.com/releasy/relay/releases/download/1.7.0-rc.1-releasy/react-relay-1.7.0-rc.1-releasy.tgz"
+    "react-relay": "https://github.com/releasy/relay/releases/download/v1.7.0-releasy/react-relay-1.7.0-releasy.tgz"
   },
   "scripts": {
     "fetch-schema": "babel-node ./scripts/fetchSchema.js",

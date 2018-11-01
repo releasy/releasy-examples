@@ -1,6 +1,6 @@
-import path from 'path'
-import fs from 'fs'
-import React from 'react'
+import path from 'path';
+import fs from 'fs';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticRouter } from 'react-router-dom';
 import Loadable from 'react-loadable';
@@ -18,7 +18,6 @@ export default (req, res, next) => {
 
   fs.readFile(filePath, 'utf8', (htmlErr, htmlData) => {
     if (htmlErr) {
-      console.log(htmlErr)
       return res.status(404).end()
     }
 
@@ -44,7 +43,7 @@ export default (req, res, next) => {
       const helmet = Helmet.renderStatic();
 
       const extraChunks = extractAssets(manifest, modules)
-        .map(c => `<script type="text/javascript" src="/${c}"></script>`);
+        .map(c => `<script type="text/javascript" src="${c}"></script>`);
 
       return res.send(
           htmlData
@@ -55,7 +54,6 @@ export default (req, res, next) => {
             .replace('</body>', extraChunks.join('') + '</body>')
       );
     }).catch(err => {
-      console.log(err)
       return res.status(404).end() 
     });
   });
